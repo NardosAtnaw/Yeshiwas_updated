@@ -164,7 +164,7 @@
                       &::after {
                         content: "";
                         position: absolute;
-                        background-color: #fff;
+                        background-color: #10284e;
                         height: 2px;
                         width: 0%;
                         left: 0;
@@ -172,7 +172,7 @@
                         transition: 0.3s;
                       }
                       &:hover {
-                        color: #fff;
+                        color: #10284e;
     
                         &::after {
                           width: 100%;
@@ -263,7 +263,7 @@
               display: block;
             }
             ul {
-              color: #fff;
+              color: #10284e;
               flex-direction: row;
               top: 0em;
               li {
@@ -273,7 +273,7 @@
                 position: relative;
 
                 a {
-                  color: #fff;
+                  color: #10284e;
                   font-size: 18px;
                   padding: 7px 13px;
                   border-radius: 3px;
@@ -281,7 +281,7 @@
                   &::after {
                     content: "";
                     position: absolute;
-                    background-color: #fff;
+                    background-color: #10284e;
                     height: 1px;
                     width: 0%;
                     left: 0;
@@ -289,7 +289,7 @@
                     transition: 0.2s;
                   }
                   &:hover {
-                    color: #fff;
+                    color: #10284e;
 
                     &::after {
                       width: 100%;
@@ -390,7 +390,7 @@
                       &::after {
                         content: "";
                         position: absolute;
-                        background-color: #fff;
+                        background-color: #10284e;
                         height: 2px;
                         width: 0%;
                         left: 0;
@@ -398,7 +398,7 @@
                         transition: 0.3s;
                       }
                       &:hover {
-                        color: #fff;
+                        color: #10284e;
     
                         &::after {
                           width: 100%;
