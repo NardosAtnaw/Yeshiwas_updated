@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="home-header1">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-header">
+            <div class="logo"></div>
+            <div class="menu">
+              <img src="./Image/menu.svg" class="ham" alt="" />
+            </div>
+          </div>
+
+          <div class="links-container">
+            <h2 class="upper-text">
+              We Won’t Stop Until We Win/For Consulations
+              <img class="upper-img" src="./Image/call1.svg" />+251 911 58 1616
+            </h2>
+            <div class="close-btn">
+              <i class="bx bx-x bx-md"></i>
+            </div>
+            <ul class="practice-ul">
+              <li><a href="index.html" class="link">Home</a></li>
+              <li><a href="yeshiwas.html" class="link">Why Yeshiwas</a></li>
+              <li><a href="practice.html" class="link">Practice Areas</a></li>
+              <li><a href="team.html" class="link">Our Team</a></li>
+              <li><a href="contact.html" class="link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="home-banner">
+        <div class="container hero">
+          <div class="headline">
+            <h1 class="home-title"></h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer style="height: 100vh; background: lightblue"></footer>
+    <script>
+      const linksContainer = document.querySelector(".links-container");
+      const nav = document.querySelector(".nav");
+      const logo = document.querySelector(".logo");
+      const menu = document.querySelector(".menu");
+      const sidenav = document.querySelector(".links-container");
+      const close = document.querySelector(".close-btn");
+      menu.addEventListener("click", () => {
+        sidenav.classList.add("show-nav");
+        console.log("clicked");
+      });
+      close.addEventListener("click", () => {
+        sidenav.classList.remove("show-nav");
+      });
+      window.addEventListener("scroll", () => {
+        const navheight = nav.getBoundingClientRect().height;
+        const scorllheight = window.pageYOffset;
+        const links = document.querySelectorAll('.link')
+        const upperText = document.querySelector('.upper-text')
+        const upperImg = document.querySelector(".upper-img")
+        if (scorllheight > navheight) {
+          menu.innerHTML = `<img src="./Image/menu3.svg" class="ham" alt="" />`;
+
+          logo.innerHTML = `<a href="./index.html"><img src="./Image/logo.svg" alt="Yeshiwas Logo" /> </a>`;
+          nav.classList.add("fixed-nav");
+          links.forEach(link => {
+              link.style.color = '#10284e'
+          })
+          upperText.style.color = '#10284e'
+          upperImg.setAttribute('src',"./Image/call3.svg")
+
+        } else {
+          logo.innerHTML = `<a href="./index.html"><img src="./Image/logo1.svg" alt="Yeshiwas Logo" />  </a>`;
+          nav.classList.remove("fixed-nav");
+          menu.innerHTML = ` <img src="./Image/menu.svg" class="ham" alt="" />`;
+          links.forEach(link => {
+              link.style.color = 'white'
+          })
+          upperText.style.color = 'white'
+          upperImg.setAttribute('src',"./Image/call1.svg")
+        }
+      });
+      //    const dropdown = document.querySelector('.drop-down')
+      //    const dropdownContent = document.querySelector('.drop-down-link')
+
+      //    dropdown.addEventListener('mouseenter', () => {
+
+      //        dropdownContent.classList.add('display-links')
+      //    })
+      //    dropdown.addEventListener('mouseleave', () => {
+
+      //        dropdownContent.classList.remove('display-links')
+      //    })
+    </script>
+  </body>
+</html>

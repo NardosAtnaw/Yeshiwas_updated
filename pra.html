@@ -11,48 +11,53 @@
 </head>
 
 <body>
-  <header class="prac-header">
-    <div class="container">
-      <section class="prac-homebg">
-
-        <section class="nav">
+  <header class="prac2-header">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-header">
           <div class="logo">
-            <img src="Image/logo1.svg" />
-          </div>
-          <div class="prac-cont1">
-            <h2>
-              We Won’t Stop Until We Win/For Consulations
-              <img class="ic1" src="/Image/call1.svg" />+251 911 58 1616
-            </h2>
-            <div class="close-btn">
-              <i class='bx bx-x bx-md'></i>
-            </div>
-
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="yeshiwas.html">Why Yeshiwas?</a></li>
-              <li><a href="practice.html">Practice Areas</a></li>
-              <li><a href="team.html">Our Team</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="./index.html"><img src="./Image/logo1.svg" alt="Yeshiwas Logo" />  </a>
           </div>
           <div class="menu">
-            <img src="./Image/menu.svg" alt="">
+            <img src="./Image/menu.svg" class="ham" alt="" />
           </div>
-        </section>
-        <div class="rank">
-          <h1>
-            <b>RANKED #1 </b><br />
-            <span> Addis's Number One Law Firm</span> </br>
-
-          </h1>
         </div>
-
-      </section>
+    
+        <div class="links-container">
+          <h2 class="upper-text">
+            We Won’t Stop Until We Win/For Consulations
+            <img class="upper-img" src="./Image/call1.svg" />+251 911 58 1616
+          </h2>
+          <div class="close-btn">
+            <i class="bx bx-x bx-md"></i>
+          </div>
+          <ul >
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="yeshiwas.html" class="link">Why Yeshiwas</a></li>
+            <li><a href="practice.html" class="link">Practice Areas</a></li>
+            <li><a href="team.html" class="link">Our Team</a></li>
+            <li><a href="contact.html" class="link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="prac2-banner">
+      <div class="container hero">
+        <div class="headline">
+          <h1 class="title">
+            <b>RANKED #1 </b><br />
+            <span> Addis'Number One Law Frim</span> </br>
+          </h1>
+         
+        </div>
+      </div>
     </div>
-    <div class="prac-fade">
-
+    <div class="fade">
+    
     </div>
+    </header>
+
     <section class="consultation">
       <div class="container">
 
@@ -67,7 +72,7 @@
         </from>
       </div>
     </section>
-  </header>
+
 
 
 
@@ -204,29 +209,8 @@
 
 
 </body>
-<script >
-    window.addEventListener('scroll', () => {
-  const nav = document.querySelector('.nav')
-  const navHeight = nav.getBoundingClientRect().height;
-  const scrollHeight = window.pageYOffset;
-  if(scrollHeight > navHeight){
-    
-    nav.classList.add('fixed')
-  }else{
-    nav.classList.remove('fixed')
-  }
-})
+<script src="./js/app.js">
 
-const menu = document.querySelector('.menu')
-const sidenav = document.querySelector('.prac-cont1')
-const close = document.querySelector('.close-btn')
-menu.addEventListener('click', () =>{
-  sidenav.classList.add('show-nav')
-  console.log("clicked");
-})
-close.addEventListener('click',() =>{
-  sidenav.classList.remove('show-nav')
-})
 
 </script>
 

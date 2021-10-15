@@ -1,33 +1,349 @@
-  
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1920px;
 
+@mixin responsive($screen-size) {
+  @if $screen-size == $sm {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  } @else if $screen-size == $md {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  } @else if $screen-size == $lg {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  } @else if $screen-size == $xl {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  } @else if $screen-size == $xxl {
+    @media screen and (min-width: $screen-size) {
+      @content;
+    }
+  } @else {
+    @error "#{$screen-size} is Invalid screen size";
+  }
+}
+.header-container {
+   width: 100% - 10%;
+   // max-width: 1200px;
+   margin: 0 auto;
+ }
 
-@mixin responsive($screen-size){
-   @if $screen-size == $sm {
-      @media screen and (min-width: $screen-size){
-         @content;
+@mixin header($class, $img, $height, $opacity,$flex) {
+  .#{$class}-header {
+    position: relative;
+    height: #{$height};
+  }
+  .#{$class}-banner {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #{$opacity} #{$img} no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    .hero {
+      width: 100% - 10%;
+      // max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+      display: grid;
+      align-items: flex-end;
+      justify-content: #{$flex};
+      text-align: center;
+      padding-bottom: 4rem;
+      padding-right: 2rem;
+      overflow: hidden;
+      .headline {
+        z-index: 9999;
+        display: grid;
+        place-items: center;
+        .title {
+          color: #fff;
+          font-weight: 600;
+          b {
+             z-index: 9999;
+            font-size: 3rem;
+          }
+          span {
+            z-index: 9999;
+            font-size: 1.38rem;
+          }
+          @include responsive($lg) {
+            b {
+              font-size: 3.63rem;
+            }
+            span {
+              font-size: 2.38rem;
+            }
+          }
+          @include responsive($xl) {
+            b {
+              font-size: 4.63rem;
+            }
+            span {
+              font-size: 1.38rem;
+            }
+          }
+          @include responsive($xxl) {
+            b {
+
+              font-size: 6.63rem;
+            }
+            span {
+              font-size: 2.38rem;
+            }
+            .fade {
+            
+              height: 25.5rem;
+             
+              
+            }
+            
+          }
+        }
+        .cont2 {
+         
+          margin-top: 1rem;
+          color: #fff;
+          padding: 3px;
+          background-color: #35c6da;
+          text-align: center;
+          z-index: 9;
+        }
+        @include responsive($lg) {
+          .cont2 {
+             z-index: 9;
+            margin-top: .5rem;
+            font-size: 21px;
+            padding: 10px;
+            background-color: #35c6da;
+            text-align: center;
+          }
+        }
       }
-   }@else if $screen-size == $md {
-      @media screen and (min-width: $screen-size){
-         @content;
+    }
+  }
+  .fade {
+  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15.5rem;
+    background: linear-gradient(
+      180deg,
+      rgba(196, 196, 196, 0.03) 32.29%,
+      #ffffff 95.83%
+    );
+  }
+
+  .ham {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .black {
+    color: #000;
+  }
+  .nav {
+    position: relative;
+    top: 0;
+    transition: all 0.3s linear;
+    height: 7.44rem;
+    padding-bottom: 0.5rem;
+    z-index: 999999;
+    .container {
+      .nav-header {
+        display: flex;
+        justify-content: space-between;
+
+        max-height: 11.81rem;
+
+        .logo {
+          width: 4rem;
+          max-height: 11.81rem;
+          margin: 0;
+          padding: 0;
+          align-self: start;
+          // background: lightblue;
+          img {
+            width: 7rem;
+            object-fit: cover;
+            object-position: center top;
+          }
+        }
+        .menu {
+          width: 2rem;
+          margin-top: 3rem;
+        }
       }
-   }@else if $screen-size == $lg {
-      @media screen and (min-width: $screen-size){
-         @content;
+      @include responsive($md) {
+        .nav-header {
+          .logo {
+            flex: 1;
+            width: 16rem;
+            top: 0;
+          }
+          .ham {
+            font-size: 4rem;
+          }
+        }
       }
-   }@else if $screen-size == $xl {
-      @media screen and (min-width: $screen-size){
-         @content;
+    }
+  }
+  .links-container {
+    // display: none;
+    background: #fff;
+    z-index: 999999;
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    top: 0;
+    right: -80vw;
+    transition: all 0.3s linear;
+    h2 {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 50%;
+      padding-left: 2rem;
+      list-style: none;
+      li {
+        a {
+          color: #10284e;
+          font-size: 25px;
+          text-decoration: none;
+          padding: 7px 13px;
+          border-radius: 3px;
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            height: 2px;
+            width: 0%;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+          }
+          &:hover {
+            color: #fff;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
       }
-   }@else if $screen-size == $xxl {
-         @media screen and (min-width: $screen-size){
-            @content;
-         }
-   }@else {
-      @error "#{$screen-size} is Invalid screen size";
-   }
+    }
+  }
+
+  .fixed-nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 7.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+  }
+  .show-links {
+    height: auto !important;
+  }
+  @include responsive($xl) {
+    .nav {
+      height: 10em;
+      .container {
+        display: flex;
+        align-items: center;
+
+        .nav-header {
+          flex: 1;
+          padding: 0;
+          .menu {
+            display: none;
+          }
+          .logo {
+            img {
+              width: 10rem;
+            }
+          }
+        }
+        .links-container {
+          display: block;
+          background: transparent;
+          z-index: 999999;
+          position: static;
+          width: auto;
+          height: auto;
+          top: 0;
+          right: 0vw;
+          transition: all 0.3s linear;
+          .close-btn {
+            display: none;
+          }
+          h2 {
+            margin-top: 1rem;
+            margin-left: 3rem;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            img {
+              margin-left: 0.5rem;
+              margin-right: 0.5rem;
+              margin-top: 0.3rem;
+            }
+          }
+          ul {
+            color: #fff;
+            flex-direction: row;
+            top: 0em;
+            li {
+              display: inline-block;
+              line-height: 80px;
+              margin: 0 5px;
+              position: relative;
+
+              a {
+                color: #fff;
+                font-size: 24px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-decoration: none;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  background-color: #fff;
+                  height: 1px;
+                  width: 0%;
+                  left: 0;
+                  bottom: -10px;
+                  transition: 0.2s;
+                }
+                &:hover {
+                  color: #fff;
+
+                  &::after {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
