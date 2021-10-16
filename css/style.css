@@ -37,6 +37,7 @@
 }
 
 .practice2-banner .hero .headline {
+  margin-bottom: 5rem;
   z-index: 9999;
   display: grid;
   place-items: center;
@@ -68,10 +69,10 @@
 
 @media screen and (min-width: 1200px) {
   .practice2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .practice2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -345,6 +346,7 @@
     overflow: hidden;
   }
   .practice2-banner .hero .headline {
+    margin-bottom: 5rem;
     z-index: 9999;
     display: grid;
     place-items: center;
@@ -374,10 +376,10 @@
 
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .practice2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .practice2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -1996,6 +1998,7 @@ footer .fo-copy img {
 }
 
 .contact1-banner .hero .headline {
+  margin-bottom: 5rem;
   z-index: 9999;
   display: grid;
   place-items: center;
@@ -2027,10 +2030,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) {
   .contact1-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .contact1-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -2304,6 +2307,7 @@ footer .fo-copy img {
     overflow: hidden;
   }
   .contact1-banner .hero .headline {
+    margin-bottom: 5rem;
     z-index: 9999;
     display: grid;
     place-items: center;
@@ -2333,10 +2337,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .contact1-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .contact1-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -2786,6 +2790,7 @@ footer .fo-copy img {
 }
 
 .prac2-banner .hero .headline {
+  margin-bottom: 5rem;
   z-index: 9999;
   display: grid;
   place-items: center;
@@ -2817,10 +2822,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) {
   .prac2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .prac2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -3094,6 +3099,7 @@ footer .fo-copy img {
     overflow: hidden;
   }
   .prac2-banner .hero .headline {
+    margin-bottom: 5rem;
     z-index: 9999;
     display: grid;
     place-items: center;
@@ -3123,10 +3129,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .prac2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .prac2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -3669,6 +3675,7 @@ footer .fo-copy img {
 }
 
 .team2-banner .hero .headline {
+  margin-bottom: 5rem;
   z-index: 9999;
   display: grid;
   place-items: center;
@@ -3700,10 +3707,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) {
   .team2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .team2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -3977,6 +3984,7 @@ footer .fo-copy img {
     overflow: hidden;
   }
   .team2-banner .hero .headline {
+    margin-bottom: 5rem;
     z-index: 9999;
     display: grid;
     place-items: center;
@@ -4006,10 +4014,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .team2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .team2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -4946,6 +4954,7 @@ footer .fo-copy img {
 }
 
 .yeshiwas2-banner .hero .headline {
+  margin-bottom: 5rem;
   z-index: 9999;
   display: grid;
   place-items: center;
@@ -4977,10 +4986,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) {
   .yeshiwas2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .yeshiwas2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -5254,6 +5263,7 @@ footer .fo-copy img {
     overflow: hidden;
   }
   .yeshiwas2-banner .hero .headline {
+    margin-bottom: 5rem;
     z-index: 9999;
     display: grid;
     place-items: center;
@@ -5283,10 +5293,10 @@ footer .fo-copy img {
 
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .yeshiwas2-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .yeshiwas2-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -6195,6 +6205,7 @@ body {
 }
 
 .home-banner .hero .headline {
+  margin-bottom: 5rem;
   z-index: 9999;
   display: grid;
   place-items: center;
@@ -6226,10 +6237,10 @@ body {
 
 @media screen and (min-width: 1200px) {
   .home-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .home-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 
@@ -6503,6 +6514,7 @@ body {
     overflow: hidden;
   }
   .home-banner .hero .headline {
+    margin-bottom: 5rem;
     z-index: 9999;
     display: grid;
     place-items: center;
@@ -6532,10 +6544,10 @@ body {
 
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .home-banner .hero .headline .title b {
-    font-size: 4.63rem;
+    font-size: 5.63rem;
   }
   .home-banner .hero .headline .title span {
-    font-size: 1.38rem;
+    font-size: 2.38rem;
   }
 }
 

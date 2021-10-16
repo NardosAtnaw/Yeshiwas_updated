@@ -65,6 +65,7 @@ $xxl: 1920px;
       padding-right: 2rem;
       overflow: hidden;
       .headline {
+         margin-bottom: 5rem;
         z-index: 9999;
         display: grid;
         place-items: center;
@@ -89,10 +90,11 @@ $xxl: 1920px;
           }
           @include responsive($xl) {
             b {
-              font-size: 4.63rem;
+              font-size: 5.63rem;
+              
             }
             span {
-              font-size: 1.38rem;
+              font-size: 2.38rem;
             }
           }
           @include responsive($xxl) {
