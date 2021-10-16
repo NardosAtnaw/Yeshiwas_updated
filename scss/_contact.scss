@@ -1,7 +1,7 @@
 
  @include header(contact1, url('../Image/contact.jpg'),60vh, rgba(0,0,0,0.1),flex-start);
- @include responsive($xxl){
-   @include header(contact1, url('../Image/contact.jpg'),100vh, rgba(0,0,0,0.1),flex-start);
+ @include responsive($xl){
+   @include header(contact1, url('../Image/contact.jpg'),90vh, rgba(0,0,0,0.1),flex-start);
  }
   @include responsive($lg) {
     .contact-header {
@@ -109,121 +109,7 @@
     } 
   }
   @include responsive($xl) {
-    .contact-header {
-      height: 90vh;
-      background: rgba(16, 40, 78, 0.4) url(../Image/contact.jpg) no-repeat;
-      background-size: cover;
-      background-blend-mode: overlay;
-      background-position: center center;
-      position: relative;
-    
-      .container {
-          height: 100%;
-
-                .contact-homebg {
-            height: 100%;
-      
-            .nav {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              color: #10284e;
-              .logo {
-                margin-top: 8px;
-                margin-left: 10px;
-                img {
-                  width: 12rem;
-                }
-              }
-              .contact-cont1 {
-                display: block;
-            background: transparent;
-            z-index: 999999;
-            position: static;
-            width: auto;
-            height: auto;
-            top: 0;
-            right: 0vw;
-            transition: all .3s linear;
-            .close-btn{
-              display: none;
-            }
-            h2{
-              font-size: 21px;
-              display: block;
-            }
-            ul {
-              color: #10284e;
-              flex-direction: row;
-              top: 0em;
-              li {
-                display: inline-block;
-                line-height: 80px;
-                margin: 0 5px;
-                position: relative;
-
-                a {
-                  color: #10284e;
-                  font-size: 18px;
-                  padding: 7px 13px;
-                  border-radius: 3px;
-                  text-decoration: none;
-                  &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: #10284e;
-                    height: 1px;
-                    width: 0%;
-                    left: 0;
-                    bottom: -10px;
-                    transition: 0.2s;
-                  }
-                  &:hover {
-                    color: #10284e;
-
-                    &::after {
-                      width: 100%;
-                    }
-                  }
-                }
-              }
-            }
-              }
-              .menu {
-                display: none;
-              }
-            }
-            
-            .rank {
-              // position: absolute;
-              bottom: 6.13rem;
-              color:#10284e;
-              text-align: center;
-              z-index: 99;
-              h1 {
-                b {
-                  font-size: 5rem;
-                }
-                span {
-                  font-size: 2.38rem;
-                }
-              }
-            }
-  
-          }
-        }
-      .contact-fade {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 15.5rem;
-          background: linear-gradient(
-            180deg,
-            rgba(196, 196, 196, 0.03) 32.29%,
-            #ffffff 95.83%
-          );
-        }
-    } 
+   
 
 
 

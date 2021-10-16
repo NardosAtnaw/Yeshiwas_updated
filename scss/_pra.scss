@@ -1,5 +1,5 @@
 @include header(prac2, url('../Image/prac.jpg'),60vh, rgba(0,0,0,0.1),flex-start);
-@include responsive($xxl){
+@include responsive($xl){
   @include header(prac2, url('../Image/prac.jpg'),100vh, rgba(0,0,0,0.1),flex-start);
 }
 
@@ -216,110 +216,7 @@
 }
 
 @include responsive($xl) {
-  .prac-header {
-    height: 90vh;
-    background: rgba(16, 40, 78, 0.4) url(../Image/prac.jpg) no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-position: center center;
-    position: relative;
-   z-index: 999;
-    .container {
-      height: 100%;
-      .prac-homebg {
-        height: 100%;
-        .nav {
-          .logo {
-            margin-top: 8px;
-            margin-left: 10px;
-            img {
-              width: 10rem;
-            }
-          }
-          .prac-cont1 {
-            display: block;
-            background: transparent;
-            z-index: 999999;
-            position: static;
-            width: auto;
-            height: auto;
-            top: 0;
-            right: 0vw;
-            transition: all .3s linear;
-            .close-btn{
-              display: none;
-            
-            }
-            h2{
-              font-size: 21px;
-              display: block;
-            }
-            ul {
-              color: #fff;
-              flex-direction: row;
-              top: 0em;
-              li {
-                display: inline-block;
-                line-height: 80px;
-                margin: 0 5px;
-                position: relative;
 
-                a {
-                  color: #fff;
-                  font-size: 18px;
-                  padding: 7px 13px;
-                  border-radius: 3px;
-                  text-decoration: none;
-                  &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: #fff;
-                    height: 1px;
-                    width: 0%;
-                    left: 0;
-                    bottom: -10px;
-                    transition: 0.2s;
-                  }
-                  &:hover {
-                    color: #fff;
-
-                    &::after {
-                      width: 100%;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .menu {
-          display: none;
-        }
-      }
-      .rank {
-        margin-left: 20px;
-        h1 {
-          b {
-            font-size: 5.63rem;
-          }
-          span {
-            font-size: 2.38rem;
-          }
-        }
-      }
-    }
-    .prac-fade {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 15.5rem;
-      background: linear-gradient(
-        180deg,
-        rgba(196, 196, 196, 0.03) 32.29%,
-        #ffffff 95.83%
-      );
-    }
-  }
   .prac {
     margin-top: 2rem;
     .container {
@@ -364,97 +261,9 @@
 }
 
 @include responsive($xxl) {
-  .prac-header {
-    height: 90vh;
-    background: rgba(16, 40, 78, 0.4) url(../Image/prac.jpg) no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-position: center center;
-    position: relative;
-   z-index: 999;
-    .container {
-      height: 100%;
-      .prac-homebg {
-        height: 100%;
-        .nav {
-          .logo {
-            margin-top: 8px;
-            margin-left: 10px;
-            img {
-              width: 12rem;
-            }
-          }
-          .prac-cont1 {
-            display: block;
-            h2 {
-              font-size: 32px;
-            }
-            ul {
-              color: #fff;
-              top: 0em;
-              li {
-                display: inline-block;
-                line-height: 80px;
-                margin: 0 5px;
-                position: relative;
 
-                a {
-                  color: #fff;
-                  font-size: 25px;
-                  padding: 7px 13px;
-                  border-radius: 3px;
-                  &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: #fff;
-                    height: 2px;
-                    width: 0%;
-                    left: 0;
-                    bottom: -10px;
-                    transition: 0.3s;
-                  }
-                  &:hover {
-                    color: #fff;
-
-                    &::after {
-                      width: 100%;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .menu {
-          display: none;
-        }
-      }
-      .rank {
-        margin-left: 20px;
-        h1 {
-          b {
-            font-size: 5.63rem;
-          }
-          span {
-            font-size: 2.38rem;
-          }
-        }
-      }
-    }
-    .prac-fade {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 15.5rem;
-      background: linear-gradient(
-        180deg,
-        rgba(196, 196, 196, 0.03) 32.29%,
-        #ffffff 95.83%
-      );
-    }
-  }
   .prac {
-    margin-top: 20rem;
+    margin-top: 2rem;
     .container {
       margin-left: 10px;
       margin-right: 10px;

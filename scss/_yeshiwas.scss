@@ -1,5 +1,5 @@
 @include header(yeshiwas2, url('../Image/yesh.jpg'),60vh, rgba(0,0,0,0.1),flex-start);
-@include responsive($xxl){
+@include responsive($xl){
   @include header(yeshiwas2, url('../Image/yesh.jpg'),100vh, rgba(0,0,0,0.1),flex-start);
 }
 .whowe {

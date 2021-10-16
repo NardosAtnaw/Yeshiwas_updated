@@ -1,6 +1,6 @@
-@include header(team, url('../Image/ourteam.jpg'),60vh, rgba(0,0,0,0.1),flex-start);
-@include responsive($xxl){
-  @include header(team, url('../Image/ourteam.jpg'),100vh, rgba(0,0,0,0.1),flex-start);
+@include header(team2, url('../Image/ourteam.jpg'),60vh, rgba(0,0,0,0.1),flex-start);
+@include responsive($xl){
+  @include header(team2, url('../Image/ourteam.jpg'),100vh, rgba(0,0,0,0.1),flex-start);
 }
 
 // .team-header {
@@ -412,12 +412,13 @@
         margin-left: 2.9rem;
         margin-right: 2.9rem;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr ;
       margin-top: 2rem;
       .pra-list {
         display: flex;
         margin-top: 1rem;
-        width: 45.44rem;
+        width: 55.44rem;
+        gap:1rem;
         .pra-img {
           img {
             width: 5rem;
